@@ -189,7 +189,13 @@ img {
   transform: scale(1, 0);
   animation-fill-mode: forwards;
   transform-origin: top;
-  
+}
+
+.has-mega-menu:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out .1s;
+  transform: scale(1, 1);
 }
 
 .mega-menu::before {
@@ -215,12 +221,7 @@ img {
   border-right: 1px solid #edeff4;
 }
 
-.has-mega-menu:hover .mega-menu {
-  opacity: 1;
-  visibility: visible;
-  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out .1s;
-  transform: scale(1, 1);
-}
+
 
 .mega-menu__item h2 {
   font-size: 17px;
@@ -237,7 +238,6 @@ img {
   max-height: 200px;
   object-fit: cover;
 }
-
 
 .mega-menu__item li a {
   text-transform: uppercase;
