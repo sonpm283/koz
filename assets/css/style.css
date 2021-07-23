@@ -110,10 +110,6 @@ img {
   z-index: 99;
 }
 
-.back-top i {
-	font-size: 20px;
-}
-
 .back-top:hover {
 	text-decoration: none;
 	color: var(--white-color);
@@ -643,11 +639,6 @@ img {
   color: var(--white-color);
 }
 
-
-.gallery {
-  padding-top: 20px;
-  background-image: linear-gradient(to right, #fdfdfd, #e6e6e6);
-}
 .gallery__img {
   width: 33.33%;
   overflow: hidden;

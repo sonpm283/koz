@@ -3,7 +3,7 @@ $(document).ready(function () {
   categorySlide.init()
   menuMobile.init()
   slideDownMenu.init()
-
+  backTop.init()
   const closeSearchBtn = $(".js-search-btn");
   const headerSeach = $(".js-header-search")
 
@@ -130,6 +130,22 @@ $(".js-cat-btn").click(function() {
   })
   $(".category__list").toggleClass("active")
 })
+
+
+const backTop = {
+  init: function() {
+      this.backTop()
+  },
+  backTop: function() {
+      $(window).scroll(function() {
+          if($(window).scrollTop() > 150) {
+              $('.back-top').addClass('active')
+          }else {
+              $('.back-top').removeClass('active')
+          }
+        });
+  }
+}
 // // Menu mobile
 // const menuMobile = {
 //   init: function () {
