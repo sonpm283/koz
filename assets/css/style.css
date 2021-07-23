@@ -860,3 +860,55 @@ img {
   line-height: 22px;
   position: relative;
 }
+
+
+.list-icon {
+  position: fixed;
+  left: 10px;
+  bottom: 100px;
+  z-index: 100;
+}
+
+.list-icon ul li {
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 1px solid #fbfbfb;
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+
+.list-icon ul li:hover span {
+  display: grid;
+}
+
+.list-icon ul li span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  display: grid;
+  place-items: center;
+  padding-right: 20px;
+  border-radius: 30px;
+  right: -124px;
+  padding-left: 68px;
+  z-index: -1;
+  color: var(--white-color);
+  display: none;
+
+}
+
+.icon-phone {
+  background: #57d247;
+}
+
+.icon-talk {
+  background: #f1d900;
+}
+
+
+.list-icon ul li .icon-email {
+  right: -156px;
+  background: #0fa8e2;
+}
