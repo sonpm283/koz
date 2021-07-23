@@ -38,7 +38,7 @@ const categorySlide = {
     this.categorySlide();
   },
   categorySlide: function () {
-    $("#category__slide").owlCarousel({
+    $(".category__slide-wrap").owlCarousel({
       items: 4,
       dots: false,
       loop: false,
@@ -62,6 +62,19 @@ const categorySlide = {
     });
   },
 };
+
+
+const tabs = $(".category__list li")
+const panes = $(".pane")
+tabs.click(function(event) {
+  tabs.removeClass("active")
+  $(this).addClass("active")
+  panes.hide()
+  var pane = $(this).attr("data-pane")
+  $(pane).fadeIn(200);
+  event.preventDefault();
+})
+$(".category__list li:first").click()
 
 
 // // Menu mobile

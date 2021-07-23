@@ -1,8 +1,9 @@
 /* ===============  Media Queries  =============== */
 
-@media screen and (min-width: 1366px) {
+
+@media screen and (min-width: 1200px) {
 	.container {
-		width: 1350px;
+		width: 1500px;
 		max-width: 100%;
 	}
 }
@@ -22,6 +23,21 @@
 		width: 40%;
 	}
 	
+	.category__list {
+		display: none !important;
+	}
+	
+	.category-btn {
+		display: flex;
+	}
+	
+	.category__nav {
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		height: 56px;
+		justify-content: flex-end;
+	}
 }
 
 @media screen and (max-width: 991px) {

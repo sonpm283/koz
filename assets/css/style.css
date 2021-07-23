@@ -538,7 +538,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .category__heading p {
@@ -547,6 +547,9 @@ img {
 
 .category__wrap {
   background: var(--secondary-color);
+  height: 56px;
+  line-height: 56px;
+  margin-top: 20px;
 }
 
 .category__slide-wrap {
@@ -556,8 +559,6 @@ img {
 .category__list {
   height: 56px;
   line-height: 56px;
-  margin-top: 20px;
-
 }
 
 .category__list li a {
@@ -581,5 +582,15 @@ img {
   font-size: 16px;
   color: var(--text-color);
   margin-top: 10px;
+}
+
+.category-btn{
+  background: unset;
+  display: none;
+}
+
+.category-btn i {
+  color: var(--white-color);
+  font-size: 25px;
 }
 
