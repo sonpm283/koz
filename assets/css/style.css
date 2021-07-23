@@ -279,7 +279,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 72px;
+  top: 70px;
   background: #2b3038;
   height: 0;
   overflow: hidden;
@@ -505,12 +505,16 @@ img {
   font-size: 24px;
   background-color: #4f903f;
   color: var(--white-color);
+  transition: all .3s ease-in-out;
 }
 
 .service-content .text-color {
   color: var(--text-color);
 }
-
+.service-content .text-normal {
+  text-transform: unset;
+  font-family: var(--sfu-book);
+}
 
 .service-content .bg-light-grey {
   background: #a8a7a7;
@@ -518,5 +522,9 @@ img {
 
 .service-content .bg-dark-blue {
   background: #2b3038;
+}
+
+.service-content a:hover {
+  transform: translateX(20px);
 }
 

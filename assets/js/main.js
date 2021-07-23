@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   const closeSearchBtn = $(".js-search-btn");
   const headerSeach = $(".js-header-search")
-  
+
   closeSearchBtn.click(function() {
     $(this).toggleClass("btn-close")
     if($(this).hasClass("btn-close")) {
@@ -19,11 +19,13 @@ const closeModelBtn = $(".js-close-modal")
 
 barsBtn.click(function() {  
   mainModal.addClass("active")
+  $('body').css({"overflow" : "hidden"})
   mainModal.css({"transform": "translateY(0)"})
 })
 
 closeModelBtn.click(function() {
   mainModal.removeClass("active")
+  $('body').css({"overflow" : "auto"})
   mainModal.css({"transform": ""})
 })
 
