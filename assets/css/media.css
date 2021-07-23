@@ -1,0 +1,32 @@
+/* ===============  Media Queries  =============== */
+
+@media screen and (min-width: 1366px) {
+	
+}
+
+@media screen and (max-width: 1199px) {
+	.menu__link {
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.nav {
+		justify-content: flex-end;
+	}
+	.menu {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 480px) {
+	
+}

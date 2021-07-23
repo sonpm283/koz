@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Delta Platinum</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/media.css" />
+	</head>
+	<body class="bg-white">
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="nav d-flex align-items-center">
+					<a href="#" class="js-menu-btn">
+						<img src="assets/images/i_menubar.png" alt="" />
+					</a>
+					<a href="index.html" class="logo">
+						<img src="assets/images/logo.png" alt="" />
+					</a>
+					<ul class="menu d-flex align-items-center">
+						<li class="menu-item">
+							<a href="index.html" class="menu-link"><span>Trang chủ</span></a>
+						</li>
+						<li class="menu-item has-sub-menu">
+							<a href="#" class="menu-link"
+								><span>Tất cả tin rao</span><i class="fa fa-angle-down"></i
+							></a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">Biệt thự</a>
+								</li>
+								<li>
+									<a href="#">Căn hộ</a>
+								</li>
+								<li>
+									<a href="#">Chung cư</a>
+								</li>
+								<li>
+									<a href="#">Nhà vườn</a>
+								</li>
+								<li>
+									<a href="#">Nhà phố</a>
+								</li>
+								<li>
+									<a href="#">Nhà đất cho thuê</a>
+								</li>
+								<li>
+									<a href="#">Nhà đất bán</a>
+								</li>
+								<li>
+									<a href="#">Dự án 360</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item has-sub-menu">
+							<a href="#" class="menu-link"
+								><span>Tin tức</span><i class="fa fa-angle-down"></i
+							></a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">Tin thị trường</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="#" class="menu-link"><span>Giới thiệu</span></a>
+						</li>
+						<li class="menu-item">
+							<a href="#" class="menu-link"><span>Liên hệ</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Menu mobile -->
+			<div class="menumobile">
+				<div class="menumobile-overlay"></div>
+				<ul class="menumobile-list">
+					<li class="menumobile-item">
+						<a href="#" class="menumobile-link">Tất cả danh mục</a>
+					</li>
+					<li class="menumobile-item">
+						<a href="#" class="menumobile-link">Trang chủ</a>
+					</li>
+					<li class="menumobile-item has-sub-mbmobile">
+						<a href="#" class="menumobile-link"
+							>Tất cả tin rao
+							<i class="fa fa-angle-down js-slide-down-menu"></i>
+						</a>
+						<ul class="submenu-mb">
+							<li>
+								<a href="#">Biệt thự</a>
+							</li>
+							<li>
+								<a href="#">Căn hộ</a>
+							</li>
+							<li>
+								<a href="#">Chung cư</a>
+							</li>
+							<li>
+								<a href="#">Nhà vườn</a>
+							</li>
+							<li>
+								<a href="#">Nhà phố</a>
+							</li>
+							<li>
+								<a href="#">Đất cho thuế</a>
+							</li>
+							<li>
+								<a href="#">Nhà đất bán</a>
+							</li>
+							<li>
+								<a href="#">Dự án 360</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menumobile-item">
+						<a href="#" class="menumobile-link"
+							>Tin tức<i class="fa fa-angle-down js-slide-down-menu"></i
+						></a>
+						<ul class="submenu-mb">
+							<li>
+								<a href="#">Tin thị trường</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menumobile-item">
+						<a href="#" class="menumobile-link">Giới thiệu</a>
+					</li>
+					<li class="menumobile-item">
+						<a href="#" class="menumobile-link">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End menu mobile -->
+		</header>
+		<!-- End header -->
+		<section class="banner">
+			<div class="home-slide owl-carousel" id="home-slide">
+				<div class="home-slide-item">
+					<img src="assets/images/bg_breadcrumb.png" alt="" />
+                    <div class="home-slide-content">
+                        Hà nội
+                    </div>
+				</div>
+			</div>
+		</section>
+        <!-- Breadcrumnb -->
+        <section class="bread-crumb">
+          <div class="container">
+            <ul class="bread-crumb-list d-flex">
+                <li>
+                    <a href="#">Trang chủ </a>
+                    <span>/</span>
+                </li>
+                <li>
+                    <a href="#">Hà Nội</a>
+                    <span>/</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="active">Biệt thự Sunshine Group</a>
+                </li>
+            </ul>
+          </div>
+        </section>
+        <!-- End breadcrumb -->
+		<!-- Product detail -->
+        <section class="product-detail-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="product-detail-thumb">
+                            <div class="outer">
+                               <img src="" alt="" data-zoom-image=""  class="thumb-big thumb-big1">
+                               <img src="" alt="" data-zoom-image=""  class="thumb-big thumb-big2">
+                               <img src="" alt="" data-zoom-image=""  class="thumb-big thumb-big3">
+                               <img src="" alt="" data-zoom-image=""  class="thumb-big thumb-big4">
+                               <img src="" alt="" data-zoom-image=""  class="thumb-big thumb-big5">
+                            </div>
+                            <div id="thumbs" class="owl-carousel owl-theme">
+                                  <div class="item">
+                                    <img src="assets/images/syn1.jpg" alt="" class="thumb-img" data-thumb-big=".thumb-big1">
+                                  </div>
+                                  <div class="item">
+                                    <img src="assets/images/syn2.jpg" alt="" class="thumb-img" data-thumb-big=".thumb-big2">
+                                  </div>
+                                  <div class="item">
+                                    <img src="assets/images/syn3.jpg" alt="" class="thumb-img" data-thumb-big=".thumb-big3">
+                                  </div>
+                                  <div class="item">
+                                    <img src="assets/images/syn4.jpg" alt="" class="thumb-img" data-thumb-big=".thumb-big4">
+                                  </div>
+                                  <div class="item">
+                                    <img src="assets/images/syn4.jpg" alt="" class="thumb-img" data-thumb-big=".thumb-big5">
+                                  </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">Biệt thự Sunshine Group</h2>
+                                    <p> Thuộc Quận/huyện: <span>Tây Hồ, Hà Nội</span></p>
+                                    <p> Kiểu dự án: : <span>Biệt thự</span></p>
+                                    <p> Trạng thái: <span>Đang bán(cho thuê)</span></p>
+                                    <div class="product-description-price">
+                                        <p>15.000.000.000₫</p>
+                                    </div>
+                                    <div class="product-description-contact">
+                                        <a href="tel:0902189435" class="d-flex align-items-center">
+                                            <span class="product-description-icon"></span>
+                                            <p>
+                                                <span>0904 448 888</span>
+                                                <span>(Liên hệ ngay)</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Product detail -->
+        <!-- Product detail info -->
+            <div class="product-detail-info">
+                <div class="container">
+                    <div class="product-title-info">
+                        <h3>Đặc điểm dự án</h3>
+                    </div>
+                    <div class="product-info d-flex">
+                        <ul class="info-desc">
+                            <li class="d-flex">
+                                <p>Loại tin rao:</p>
+                                <span>Cần bán</span>
+                            </li>
+                            <li class="d-flex">
+                                <p>Địa chỉ:</p>
+                                <span>Sài Đồng Long Biên Hà Nội</span>
+                            </li>
+                            <li class="d-flex">
+                                <p>Diện tích:</p>
+                                <span>162m2</span>
+                            </li>
+                            <li class="d-flex">
+                                <p>Phòng ngủ:</p>
+                                <span>4</span>
+                            </li>
+                            <li class="d-flex">
+                                <p>Phòng WC:</p>
+                                <span>3</span>
+                            </li>
+                            <li class="d-flex">
+                                <p>Hướng nhà(dự án):</p>
+                                <span>Nam</span>
+                            </li>
+                        </ul>
+                        <div class="sale-info">
+                            <div class="sale-avatar text-center">
+                                <img src="assets/images/avt.png" alt="sale-avatar">
+                            </div>
+                            <ul class="sale-contact">
+                                <li class="d-flex">
+                                   <p>Tên liên lạc: </p>
+                                   <span>Thương Đào Quý</span>
+                                </li>
+                                <li class="d-flex">
+                                    <p>Số điện thoại </p>
+                                    <a href="tel:0388287614">0388 287 614</a>
+                                 </li>
+                                 <li class="d-flex">
+                                    <p>Email</p>
+                                    <a href="mailto:namthuong39@gmail.com">namthuong39@gmail.com</a>
+                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-content">
+                <div class="container">
+                    <div class="product-title-info">
+                        <h3>Chi tiết dự án</h3>
+                    </div>
+                    <div class="product-content-detail">
+                        Chính chủ cần bán biệt thự Jamona Golden Silk - 19 khu Vinhomes Riverside, Long Biên, Hà Nội.
+                        - DT 162m2, gồm 3 tầng: 4 phòng ngủ + 1 phòng đọc sách + 1 phòng sinh hoạt chung tầng 1 là phòng khách và bếp. Tầng 2 có 2 phòng ngủ khép kín.
+                        Tầng 3 có 1 phòng ngủ, 1 phòng đọc sách, 1 phòng tắm, 1 phòng giặt.
+                        - Thiết kế hiện đại, có bồn tắm thư giãn, bồn tắm đứng.
+                        - Biệt thự đủ đồ, nội thất cao cấp nhập khẩu từ nước ngoài, tất cả các phòng đều có ban công rộng, sân vườn đẹp.
+                        - Vị trí khu biệt thự gần trung tâm thương mại Vincom, trường BVIS, công viên khủng long.
+                        - Yên tĩnh, an ninh tuyệt đối, cư dân văn minh.
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-site">
+                <div class="container">
+                    <div class="product-title-info">
+                        <h3>Vị trí dự án</h3>
+                    </div>
+                    <div class="product-content-detail product-site-content">
+                        Chính chủ cần bán biệt thự Jamona Golden Silk - 19 khu Vinhomes Riverside, Long Biên, Hà Nội.
+                        - DT 162m2, gồm 3 tầng: 4 phòng ngủ + 1 phòng đọc sách + 1 phòng sinh hoạt chung tầng 1 là phòng khách và bếp. Tầng 2 có 2 phòng ngủ khép kín.
+                        Tầng 3 có 1 phòng ngủ, 1 phòng đọc sách, 1 phòng tắm, 1 phòng giặt.
+                        - Thiết kế hiện đại, có bồn tắm thư giãn, bồn tắm đứng.
+                        - Biệt thự đủ đồ, nội thất cao cấp nhập khẩu từ nước ngoài, tất cả các phòng đều có ban công rộng, sân vườn đẹp.
+                        - Vị trí khu biệt thự gần trung tâm thương mại Vincom, trường BVIS, công viên khủng long.
+                        - Yên tĩnh, an ninh tuyệt đối, cư dân văn minh.
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-rate">
+                <div class="container">
+                    <div class="product-title-info d-flex align-items-center justify-content-between">
+                        <h3>Đánh giá dự án</h3>
+                        <span>Đánh giá |</span>
+                    </div>
+                    <div class="product-content-detail product-rate-content">
+                        Chính chủ cần bán biệt thự Jamona Golden Silk - 19 khu Vinhomes Riverside, Long Biên, Hà Nội.
+                        - DT 162m2, gồm 3 tầng: 4 phòng ngủ + 1 phòng đọc sách + 1 phòng sinh hoạt chung tầng 1 là phòng khách và bếp. Tầng 2 có 2 phòng ngủ khép kín.
+                        Tầng 3 có 1 phòng ngủ, 1 phòng đọc sách, 1 phòng tắm, 1 phòng giặt.
+                        - Thiết kế hiện đại, có bồn tắm thư giãn, bồn tắm đứng.
+                        - Biệt thự đủ đồ, nội thất cao cấp nhập khẩu từ nước ngoài, tất cả các phòng đều có ban công rộng, sân vườn đẹp.
+                        - Vị trí khu biệt thự gần trung tâm thương mại Vincom, trường BVIS, công viên khủng long.
+                        - Yên tĩnh, an ninh tuyệt đối, cư dân văn minh.
+                    </div>
+                </div>
+            </div>
+            <div class="person-post mt-5 mb-5">
+                    <div class="page-heading-main">
+                        <section class="project-for-rent wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                            <div class="container">
+                                <div class="page-heading-main">
+                                    <h2 class="page-heading">
+                                        Cùng
+                                        <span>Người đăng</span>
+                                    </h2>
+                                    <p>Những dự án khác cùng người đăng</p>
+                                </div>
+                                <div class="project-rent-wrap owl-carousel project-rent-slide">
+                                    <div class="project-rent-item">
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="detail.html" class="link-product"></a>
+                                                <a href="#">
+                                                    <img src="assets/images/thue2.jpg" alt="">
+                                                </a>
+                                                <p>
+                                                    <span>Cho thuê</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-desc">
+                                                <div class="product-detail">
+                                                    <h3 class="product-name"><a href="detail.html">Cho thuê căn hộ, biệt thự cao cấp</a></h3>
+                                                    <p class="product-addr"><i class="fa fa-map-marker"></i>Phường 15 Bình Thạnh Hồ Chí Minh</p>
+                                                    <p class="product-price">
+                                                        <i class="fa fa-phone"></i>
+                                                        <span>36.000.000₫</span>
+                                                        /Tháng
+                                                    </p>
+                                                </div>
+                                                <div class="product-extentions">
+                                                    <ul class="product-extentions-list d-flex">
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/ped.png" alt="">
+                                                            <span>2 Ngủ</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/bath.png" alt="">
+                                                            <span>3 Tắm</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/square.png" alt="">
+                                                            <span>175m2</span>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-rent-item">
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="detail.html" class="link-product"></a>
+                                                <a href="#">
+                                                    <img src="assets/images/thue1.jpg" alt="">
+                                                </a>
+                                                <p>
+                                                    <span>Cho thuê</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-desc">
+                                                <div class="product-detail">
+                                                    <h3 class="product-name"><a href="detail.html">Cho thuê căn hộ, biệt thự cao cấp</a></h3>
+                                                    <p class="product-addr"><i class="fa fa-map-marker"></i>Phường 15 Bình Thạnh Hồ Chí Minh</p>
+                                                    <p class="product-price">
+                                                        <i class="fa fa-phone"></i>
+                                                        <span>36.000.000₫</span>
+                                                        /Tháng
+                                                    </p>
+                                                </div>
+                                                <div class="product-extentions">
+                                                    <ul class="product-extentions-list d-flex">
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/ped.png" alt="">
+                                                            <span>2 Ngủ</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/bath.png" alt="">
+                                                            <span>3 Tắm</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/square.png" alt="">
+                                                            <span>175m2</span>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="text-center mt-3 mb-3 d-none">Không có dự án nào cùng người đăng</p>
+            </div>
+            <div class="news-post">
+                    <div class="page-heading-main">
+                        <section class="project-for-rent wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                            <div class="container">
+                                <div class="page-heading-main">
+                                    <h2 class="page-heading">
+                                       Tin rao
+                                        <span>Cùng chủ đề</span>
+                                    </h2>
+                                    <p>Những tin rao cùng chủ đề bạn đang xem</p>
+                                </div>
+                                <div class="project-rent-wrap owl-carousel project-rent-slide">
+                                    <div class="project-rent-item">
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="detail.html" class="link-product"></a>
+                                                <a href="#">
+                                                    <img src="assets/images/thue1.jpg" alt="">
+                                                </a>
+                                                <p>
+                                                    <span>Cho thuê</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-desc">
+                                                <div class="product-detail">
+                                                    <h3 class="product-name"><a href="detail.html">Cho thuê căn hộ, biệt thự cao cấp</a></h3>
+                                                    <p class="product-addr"><i class="fa fa-map-marker"></i>Phường 15 Bình Thạnh Hồ Chí Minh</p>
+                                                    <p class="product-price">
+                                                        <i class="fa fa-phone"></i>
+                                                        <span>36.000.000₫</span>
+                                                        /Tháng
+                                                    </p>
+                                                </div>
+                                                <div class="product-extentions">
+                                                    <ul class="product-extentions-list d-flex">
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/ped.png" alt="">
+                                                            <span>2 Ngủ</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/bath.png" alt="">
+                                                            <span>3 Tắm</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/square.png" alt="">
+                                                            <span>175m2</span>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-rent-item">
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="detail.html" class="link-product"></a>
+                                                <a href="#">
+                                                    <img src="assets/images/thue2.jpg" alt="">
+                                                </a>
+                                                <p>
+                                                    <span>Cho thuê</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-desc">
+                                                <div class="product-detail">
+                                                    <h3 class="product-name"><a href="detail.html">Cho thuê căn hộ, biệt thự cao cấp</a></h3>
+                                                    <p class="product-addr"><i class="fa fa-map-marker"></i>Phường 15 Bình Thạnh Hồ Chí Minh</p>
+                                                    <p class="product-price">
+                                                        <i class="fa fa-phone"></i>
+                                                        <span>36.000.000₫</span>
+                                                        /Tháng
+                                                    </p>
+                                                </div>
+                                                <div class="product-extentions">
+                                                    <ul class="product-extentions-list d-flex">
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/ped.png" alt="">
+                                                            <span>2 Ngủ</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/bath.png" alt="">
+                                                            <span>3 Tắm</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/square.png" alt="">
+                                                            <span>175m2</span>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-rent-item">
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="detail.html" class="link-product"></a>
+                                                <a href="#">
+                                                    <img src="assets/images/thue3.jpg" alt="">
+                                                </a>
+                                                <p>
+                                                    <span>Cho thuê</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-desc">
+                                                <div class="product-detail">
+                                                    <h3 class="product-name"><a href="detail.html">Cho thuê căn hộ, biệt thự cao cấp</a></h3>
+                                                    <p class="product-addr"><i class="fa fa-map-marker"></i>Phường 15 Bình Thạnh Hồ Chí Minh</p>
+                                                    <p class="product-price">
+                                                        <i class="fa fa-phone"></i>
+                                                        <span>36.000.000₫</span>
+                                                        /Tháng
+                                                    </p>
+                                                </div>
+                                                <div class="product-extentions">
+                                                    <ul class="product-extentions-list d-flex">
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/ped.png" alt="">
+                                                            <span>2 Ngủ</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/bath.png" alt="">
+                                                            <span>3 Tắm</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/square.png" alt="">
+                                                            <span>175m2</span>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-rent-item">
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="detail.html" class="link-product"></a>
+                                                <a href="#">
+                                                    <img src="assets/images/thue1.jpg" alt="">
+                                                </a>
+                                                <p>
+                                                    <span>Cho thuê</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-desc">
+                                                <div class="product-detail">
+                                                    <h3 class="product-name"><a href="detail.html">Cho thuê căn hộ, biệt thự cao cấp</a></h3>
+                                                    <p class="product-addr"><i class="fa fa-map-marker"></i>Phường 15 Bình Thạnh Hồ Chí Minh</p>
+                                                    <p class="product-price">
+                                                        <i class="fa fa-phone"></i>
+                                                        <span>36.000.000₫</span>
+                                                        /Tháng
+                                                    </p>
+                                                </div>
+                                                <div class="product-extentions">
+                                                    <ul class="product-extentions-list d-flex">
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/ped.png" alt="">
+                                                            <span>2 Ngủ</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/bath.png" alt="">
+                                                            <span>3 Tắm</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center justify-content-center">
+                                                            <img src="assets/images/square.png" alt="">
+                                                            <span>175m2</span>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="text-center mt-3 mb-3 d-none">Không có dự án nào cùng người đăng</p>
+              
+            </div>
+        <!-- End product detail info -->
+		<!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item">
+                            <h4 class="footer-title">Về chúng tôi</h4>
+                            <p>
+                                Delta Platinum là một sản phẩm của Delta Web, với nỗ lực phát triển bền vững về thị trường bất động sản, Delta Platinum đều có thể giúp bạn.
+                                <br>
+                                Tìm tin bán nhà đất hoặc cho thuê nhà đất mới nhất bằng cách sử dụng công cụ tìm kiếm hoặc các đường link ngay trên trang chủ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item text-right mb-left">
+                            <h4 class="footer-title right">Về chúng tôi</h4>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tất cả tin rao</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item">
+                            <div class="footer-custom">
+                            <h4 class="footer-title">Về chúng tôi</h4>
+                            <p class="footer-support">Bạn cần hỗ trợ ?</p>
+                            <a href="#" class="footer-phone">0388287614</a>
+                            <p>An Thượng, Hà Nội, Vietnam</p>
+                            <p>deltawebltd@gmail.com</p>
+                            <div class="social">
+                                <a href="#" title="Theo dõi Facebook Delta Platinum"><i class="fa fa-facebook"></i></a>
+                                <a href="#" title="Theo dõi Twitter Delta Platinum"><i class="fa fa-twitter"></i></a>
+                                <a href="#" title="Theo dõi Google Plus Delta Platinum"><i class="fa fa-google"></i></a>
+                                <a href="#" title="Theo dõi Instagam Delta Platinum"><i class="fa fa-instagram"></i></a>
+                                <a href="#" title="Theo dõi Youtube Delta Platinum"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item text-right mb-left">
+                            <h4 class="footer-title right">Hướng dẫn</h4>
+                            
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tất cả tin rao</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright text-center w-100">
+                        © Bản quyền thuộc về <a href="#">QTS</a> | Cung cấp bởi <a href="#"> QTS</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-top active">
+            <i class="bx bx-chevron-up"></i>
+        </a>
+		<!-- End Footer -->
+		<!-- Hot link -->
+		<div class="hotlink">
+			<div class="hotlink-list">
+				<div class="hotlink-item">
+					<a href="#0902189435" class="item-link hotline">
+						<span>Hotline</span>
+					</a>
+				</div>
+				<div class="hotlink-item">
+					<a href="#" class="item-link project">
+						<span>Dự án 360</span>
+					</a>
+				</div>
+				<div class="hotlink-item">
+					<a href="#" class="item-link fanpage">
+						<span>Fanpage</span>
+					</a>
+				</div>
+				<div class="hotlink-item">
+					<a href="#" class="item-link youtube">
+						<span>Kênh Youtube</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- end hot link -->
+		
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.min.js" integrity="sha512-UH428GPLVbCa8xDVooDWXytY8WASfzVv3kxCvTAFkxD2vPjouf1I3+RJ2QcSckESsb7sI+gv3yhsgw9ZhM7sDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>
