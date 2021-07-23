@@ -126,6 +126,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 25px;
+  line-height: 24px;
 }
 
 .nav__language li ~ li {
@@ -150,9 +151,17 @@ img {
   background-color: #ececec;
   color: #015f9e;
 }
+
+.nav__action-search .btn-close i::before {
+  content: '\f00d';
+  color: #015f9e;
+  opacity: .5;
+}
+
 .nav__language li a img {
   transition: all .25s ease-in-out;
 }
+
 .nav__language li a img:hover  {
   transform: scale(1.2);
 }
@@ -253,4 +262,97 @@ img {
   height: 2px;
   background-color: var(--main-color);
   bottom: 0;
+}
+
+.header__search-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 72px;
+  background: linear-gradient(to right, var(--main-color), #87b959 );
+  height: 0;
+  overflow: hidden;
+  transition: height .5s ease;
+}
+
+.header__search-inner h2 {
+  margin: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white-color);
+  font-size: 20px;
+  letter-spacing: 10px;
+  position: relative;
+  padding-top: 50px ;
+}
+
+.header__search-inner h2::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: .5px;
+  background: var(--white-color);
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__form {
+  margin: 20px 0;
+}
+
+.form-gr input {
+  width: calc(100% - 77px);
+  outline: none;
+  border: none;
+  height: 76px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  
+}
+
+.form-gr input::placeholder {
+  color: rgb(133, 133, 133);
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.form-gr button {
+  width: 77px;
+  background: var(--white-color);
+}
+
+.form-gr button i {
+  font-size: 25px;
+}
+
+.header__keyword  h3 {
+    margin-right: 35px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    background: url(../images/search-icon.png) no-repeat 0 50%;
+}
+
+.header__keyword {
+  padding-bottom: 50px;
+}
+
+.header__keyword ul li ~ li {
+  margin-left: 5px;
+}
+
+.header__keyword ul li a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  opacity: .7;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-decoration: none;
 }

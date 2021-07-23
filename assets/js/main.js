@@ -10,7 +10,21 @@ $(document).ready(function () {
   // projectSale.init();
   // newsSlide.init();
   // backTop.init();
+
+
+  const closeSearchBtn = $(".js-search-btn");
+  const headerSeach = $(".js-header-search")
+  closeSearchBtn.click(function() {
+    $(this).toggleClass("btn-close")
+    if($(this).hasClass("btn-close")) {
+      headerSeach.css({"height": 300})
+    }else {
+      headerSeach.css({"height": 0})
+    }
+  })
 });
+
+
 
 // Main slide
 // const navText = [
