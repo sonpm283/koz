@@ -199,10 +199,10 @@
 @media screen and (max-width: 480px) {
 	.ads__content {
 		top: 40%;
-		width: 78%;
+		width: 70%;
 	}
 	.ads__content p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.ads__btn {
 		font-size: 14px;
