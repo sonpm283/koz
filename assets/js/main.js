@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-  categorySlide.init();
+  categorySlide.init()
+  menuMobile.init()
+  slideDownMenu.init()
 
   const closeSearchBtn = $(".js-search-btn");
   const headerSeach = $(".js-header-search")
@@ -21,13 +23,11 @@ const closeModelBtn = $(".js-close-modal")
 
 barsBtn.click(function() {  
   mainModal.addClass("active")
-  $('body').css({"overflow" : "hidden"})
   mainModal.css({"transform": "translateY(0)"})
 })
 
 closeModelBtn.click(function() {
   mainModal.removeClass("active")
-  $('body').css({"overflow" : "auto"})
   mainModal.css({"transform": ""})
 })
 
@@ -75,6 +75,54 @@ tabs.click(function(event) {
 })
 $(".category__list li:first").click()
 
+
+const footerBtn = $(".js-footer-btn")
+footerBtn.click(function() {
+ $(".footer__link-list").toggleClass("active")
+})
+
+
+
+const menuMobile = {
+  init: function () {
+    this.menuMobile();
+  },
+  menuMobile: function () {
+    const menuBtn = $(".js-mb-btn");
+    const menuMobile = $(".menumobile");
+    const menuOverlay = $(".menumobile-overlay");
+
+    menuBtn.click(function () {
+      menuMobile.addClass("active");
+    });
+
+    menuOverlay.click(function () {
+      menuMobile.removeClass("active");
+    });
+  },
+};
+
+const slideDownMenu = {
+  init: function () {
+    this.subMenuChild();
+  },
+  subMenuChild: function () {
+    $(".js-slide-down-menu").click(function (event) {
+      const target = $(this).parent().next(".submenu-mb");
+      const item = $(this).parent().parent(".menumobile-item");
+      if ($(this).hasClass("fa fa-plus")) {
+        $(this).removeClass("fa fa-plus");
+        $(this).addClass("fa fa-minus");
+      } else if ($(this).hasClass("fa fa-minus")) {
+        $(this).removeClass("fa fa-minus");
+        $(this).addClass("fa fa-plus");
+      }
+      $(item).toggleClass("active");
+      $(target).slideToggle(300);
+      event.preventDefault();
+    });
+  },
+};
 
 // // Menu mobile
 // const menuMobile = {
