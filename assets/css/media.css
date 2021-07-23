@@ -181,16 +181,18 @@
 		height: 250px;
 		object-fit: cover;
 	}
+
 	.service-content {
 		width: 50%;
 	}
+	
 	.service-content a {
-		font-size: 13px;
+		font-size: 16px;
 	}
 
 	.service-content h2 {
 		line-height: 20px;
-    	font-size: 16px;
+    	font-size: 20px;
 	}
 }
 
