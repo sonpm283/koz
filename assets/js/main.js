@@ -49,7 +49,7 @@ const categorySlide = {
       autoplaySpeed: 800,
       responsive: {
         0: {
-          items: 1.2,
+          items: 1,
         },
         600: {
           items: 2,
