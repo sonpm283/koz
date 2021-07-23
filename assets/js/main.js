@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  categorySlide.init();
+
   const closeSearchBtn = $(".js-search-btn");
   const headerSeach = $(".js-header-search")
 
@@ -30,27 +32,37 @@ closeModelBtn.click(function() {
 })
 
 
+// product slide
+const categorySlide = {
+  init: function () {
+    this.categorySlide();
+  },
+  categorySlide: function () {
+    $("#category__slide").owlCarousel({
+      items: 4,
+      dots: false,
+      loop: false,
+      nav: false,
+      autoplay: true,
+      margin: 20,
+      slideTransition: 'linear',
+      autoplayTimeout: 5000,
+      autoplaySpeed: 800,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 4,
+        },
+      },
+    });
+  },
+};
 
-
-// Main slide
-// const navText = [
-//   "<i class='fa fa-angle-left'></i>",
-//   "<i class='fa fa-angle-right'></i>",
-// ];
-// const mainSlide = {
-//   init: function () {
-//     this.mainSlide();
-//   },
-//   mainSlide: function () {
-//     $("#home-slide").owlCarousel({
-//       items: 1,
-//       dots: false,
-//       loop: false,
-//       nav: false,
-//       autoplay: false,
-//     });
-//   },
-// };
 
 // // Menu mobile
 // const menuMobile = {
