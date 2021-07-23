@@ -143,7 +143,7 @@ img {
 .nav__action-search .search-btn,
 .nav__action-bars i{
   height: 100%;
-  width: 60px;
+  width: 65px;
   font-size: 20px;
 }
 
@@ -220,8 +220,6 @@ img {
 .list-item:first-child {
   border-right: 1px solid #edeff4;
 }
-
-
 
 .mega-menu__item h2 {
   font-size: 17px;
@@ -355,4 +353,104 @@ img {
   border: 1px solid #fff;
   border-radius: 25px;
   text-decoration: none;
+}
+
+.main-modal {
+  background: #f5f6fa;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid rgba(0,0,0,.2);
+  border: 1px solid #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .25s linear;
+  transform: translateY(-100px);
+}
+
+.main-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-modal__header {
+  border-bottom: 2px solid #000;
+  padding: 15px;
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-modal__header button  {
+    width: 80px;
+    height: 80px;
+    background-image: linear-gradient(to right, #20409a, #009a4f);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 60px;
+    opacity: 1;
+    color: #fff;
+}
+
+.main-modal__header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.main-modal__header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-modal__header hr {
+  width: 1px;
+  height: 50px;
+  margin: 0 auto 14px;
+  border: 0;
+  background: -webkit-linear-gradient(to bottom, #134faa, #00857d);
+  background: -o-linear-gradient(to bottom, #134faa, #00857d);
+  background: -moz-linear-gradient(to bottom, #134faa, #00857d);
+  background: linear-gradient(to bottom, #134faa, #00857d);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#134faa', endColorstr='#00857d',GradientType=1 );
+}
+
+.modal-body__item {
+  margin-bottom: 20px;
+}
+
+.modal-body__item ul li h2 {
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white-color);
+  font-size: 20px;
+  position: relative;
+  color: var(--text-color);
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.modal-body__item ul li h2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--main-color), #87b959 );
+  bottom: 0;
+}
+
+.modal-body__item ul li a {
+  display: block;
+  font-size: 15px;
+  color: #68686e;
+  background: url(../images/sitemap_list_off.png) no-repeat 100% 10px;
+  line-height: 35px;
+}
+
+.modal-body__item ul li img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }

@@ -1,19 +1,8 @@
 $(document).ready(function () {
-  // menuMobile.init();
-  // mainSlide.init();
-  // slideDownMenu.init();
-  // advanceFilter.init();
-  // productSlide.init();
-  // projectRent.init();
-  // tabProduct.init();
-  // productMenu.init();
-  // projectSale.init();
-  // newsSlide.init();
-  // backTop.init();
-
 
   const closeSearchBtn = $(".js-search-btn");
   const headerSeach = $(".js-header-search")
+  
   closeSearchBtn.click(function() {
     $(this).toggleClass("btn-close")
     if($(this).hasClass("btn-close")) {
@@ -23,6 +12,21 @@ $(document).ready(function () {
     }
   })
 });
+
+const mainModal = $(".js-main-modal")
+const barsBtn = $(".js-bars-btn")
+const closeModelBtn = $(".js-close-modal")
+
+barsBtn.click(function() {  
+  mainModal.addClass("active")
+  mainModal.css({"transform": "translateY(0)"})
+})
+
+closeModelBtn.click(function() {
+  mainModal.removeClass("active")
+  mainModal.css({"transform": ""})
+})
+
 
 
 
