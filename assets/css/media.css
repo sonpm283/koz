@@ -35,12 +35,17 @@
 		width: 35%;
 	}
 	.service-content h2 {
-		
-		font-size: 30px;
+		font-size: 25px;
+		line-height: 40px;
 	}
 	.header__search-inner {
 		top: 66px;
 	}
+	.service-content a {
+		font-size: 20px;
+		padding: 10px 15px;
+	}
+	
 }
 
 @media screen and (max-width: 767px) {
@@ -94,7 +99,6 @@
 	}
 
 	.service-content a {
-		padding: 10px 15px;
 		font-size: 16px;
 	}
 
@@ -102,6 +106,24 @@
 
 @media screen and (max-width: 768px) {
 	
+}
+
+@media screen and (max-width: 575px) {
+	.service-img img {
+		height: 250px;
+		object-fit: cover;
+	}
+	.service-content {
+		width: 50%;
+	}
+	.service-content a {
+		font-size: 13px;
+	}
+
+	.service-content h2 {
+		line-height: 20px;
+    	font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 480px) {
