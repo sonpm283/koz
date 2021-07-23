@@ -559,6 +559,11 @@ img {
 .category__list {
   height: 56px;
   line-height: 56px;
+  display: flex;
+}
+
+.category__list.active {
+  display: none;
 }
 
 .category__list li a {

@@ -124,6 +124,12 @@ const slideDownMenu = {
   },
 };
 
+$(".js-cat-btn").click(function() {
+  $(".category__list li").click(function() {
+    $(".category__list").removeClass("active");
+  })
+  $(".category__list").toggleClass("active")
+})
 // // Menu mobile
 // const menuMobile = {
 //   init: function () {

@@ -142,6 +142,7 @@
 						<a href="" class="menu__link">Liên hệ</a>
 					</li>
 				</ul>
+				<!-- language PC -->
 				<ul class="nav__language d-flex">
 					<li>
 						<a href="#"><img src="assets/images/vi.jpg" alt="vi-icon-language"></a>
@@ -156,7 +157,8 @@
 			<div class="nav__action-search">
 				<button class="search-btn js-search-btn"><i class="fa fa-search"></i></button>
 			</div>
-			<!-- languge mb -->
+
+			<!-- language mobile -->
 			<ul class="nav__language nav__lang-mb d-flex">
 				<li>
 					<a href="#"><img src="assets/images/vi.jpg" alt="vi-icon-language"></a>
@@ -207,7 +209,6 @@
 			</div>
 		</div>
 		<!-- Menu mobile -->
-
 		<div class="menumobile">
 			<div class="menumobile-overlay"></div>
 			<ul class="menumobile-list">
@@ -246,6 +247,8 @@
 			</ul>
 		</div>
 	</header>
+
+	<!-- Main Modal -->
 	<div class="main-modal js-main-modal">
 		<div class="main-modal__header">
 			<hr>
@@ -469,8 +472,9 @@
 			<div class="category__wrap">
 				<div class="container">
 					<div class="category__nav">
-						<ul class="category__list d-flex align-items-center justify-content-between">
-							<li data-pane=".pane1">
+						<!-- Category nav PC -->
+						<ul class="category__list align-items-center justify-content-between">
+							<li data-pane=".pane1" class="pane">
 								<a href="#" data-pane=".pane1">Product Development</a>
 							</li>
 							<li data-pane=".pane2">
@@ -492,7 +496,9 @@
 								<a href="#">Mold design</a>
 							</li>
 						</ul>
-						<button class="category-btn">
+
+						<!-- Category N -->
+						<button class="category-btn js-cat-btn">
 							<i class="fa fa-bars"></i>
 						</button>
 					</div>
@@ -541,7 +547,6 @@
 						<h3 class="category__slide-title"><a href="">Product design main</a></h3>
 					</div>
 				</div>
-
 				<!-- pane 3 -->
 				<div class="category__slide-wrap owl-carousel pane pane3">
 					<div class="category__slide-item">
