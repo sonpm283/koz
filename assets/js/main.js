@@ -32,7 +32,6 @@ closeModelBtn.click(function() {
 })
 
 
-// product slide
 const categorySlide = {
   init: function () {
     this.categorySlide();

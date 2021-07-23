@@ -79,9 +79,7 @@ img {
   display: block;
 }
 
-.pdd-10 {
-  padding: 0 10px;
-}
+
 
 @font-face {
   font-family: SFUBold;
@@ -495,12 +493,12 @@ img {
   font-family: var(--sfu-b);
   color: var(--white-color);
   line-height: 48px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .service-content a {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 10px 20px 12px 20px;
   font-family: var(--sfu-book);
   font-size: 24px;
   background-color: #4f903f;
@@ -594,3 +592,125 @@ img {
   font-size: 25px;
 }
 
+.ads {
+  position: relative;
+  background: url(/assets/images/zxcxc.png) no-repeat center/cover;
+  height: 260px;
+  margin-top: 60px;
+  width: 100%;
+  background-position: center;
+  background-color: #e5e5e5;
+  
+}
+
+.ads__img img {
+  width: 100%;
+}
+
+.ads__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ads__content p {
+  font-size: 24px;
+  font-family: var(--sfu-book);
+  color: #183f58;
+  line-height: 48px;
+}
+
+.ads__btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #183f58;
+  color: var(--white-color);
+  font-size: 18px;
+  border: none;
+  transition: transform .25s ease-in-out;
+  margin-top: 10px;
+}
+
+.ads__btn:hover {
+  transform: translateX(20px);
+  color: var(--white-color);
+}
+
+
+.gallery {
+  padding-top: 20px;
+  background-image: linear-gradient(to right, #fdfdfd, #e6e6e6);
+}
+.gallery__img {
+  width: 33.33%;
+  overflow: hidden;
+}
+
+.gallery__img img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.35s, transform 0.35s;
+  max-width: none;
+  cursor: pointer;
+
+}
+
+.gallery__img:hover img {
+  opacity: .5;
+  transform: scale(1.1);
+}
+
+.social p {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-right: 10px;
+}
+
+.social {
+  background-color: #183f58 ;
+  padding: 10px 0;
+}
+
+.social__list li {
+  margin: 0 7.5px;
+}
+
+.social__list li a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #788791;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a2b1ba;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  padding: 45px 0;
+}
+
+.footer__content {
+  color: var(--white-color);
+}
+
+.footer__content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.footer__content .footer__intro {
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.footer__content p {
+  line-height: 36px;
+}

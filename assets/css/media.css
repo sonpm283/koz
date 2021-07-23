@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 1200px) {
 	.container {
-		width: 1500px;
+		width: 1350px;
 		max-width: 100%;
 	}
 }
@@ -30,7 +30,7 @@
 	.category-btn {
 		display: flex;
 	}
-	
+
 	.category__nav {
 		line-height: 30px;
 		display: flex;
@@ -61,7 +61,12 @@
 		font-size: 20px;
 		padding: 10px 15px;
 	}
-	
+	.ads__content p {
+		font-size: 19px;
+	}
+	.ads__btn {
+		padding: 10px 15px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -118,6 +123,14 @@
 		font-size: 16px;
 	}
 
+	.gallery  {
+		flex-wrap: wrap;
+	}
+
+	.gallery__img {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -143,5 +156,24 @@
 }
 
 @media screen and (max-width: 480px) {
+	.ads__content {
+		top: 40%;
+		width: 78%;
+	}
+	.ads__content p {
+		font-size: 14px;
+	}
+	.ads__btn {
+		font-size: 14px;
+	}
+	.ads__content p {
+		line-height: 30px;
+	}
 	
+}
+
+@media screen and (max-width: 340px) {
+	.social p  {
+		margin-bottom: 20px;
+	}
 }
