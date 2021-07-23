@@ -224,6 +224,10 @@
 	.ads__content p {
 		line-height: 30px;
 	}
+
+	.list-icon {
+		bottom: 50px;
+	}
 	
 }
 
