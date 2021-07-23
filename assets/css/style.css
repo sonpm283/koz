@@ -579,6 +579,37 @@ img {
   object-fit: cover;
 }
 
+.category__slide-item > a img {
+  transition: all .3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.category__slide-item > a:hover img{
+  display: block;
+  box-shadow: 0 10px 20px 0 rgb(153 159 183 / 50%);
+  border-color: #337ab7;
+}
+
+.category-hover-icon {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+
+.category__slide-item:hover .category-hover-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.category-hover-icon  img {
+  width: 68px !important;
+  height: 69px;
+}
+
 .category__slide-item h3 {
   font-size: 16px;
   color: var(--text-color);
