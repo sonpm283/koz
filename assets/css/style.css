@@ -5,6 +5,8 @@
   --text-color: #333333;
   --secondary-color: #2b3038;
   --roboto-font: 'Roboto', sans-serif;
+  --sfu-b:  SFUBold;
+  --sfu-book: SFUBook;
 }
 
 html {
@@ -81,6 +83,16 @@ img {
   padding: 0 10px;
 }
 
+@font-face {
+  font-family: SFUBold;
+  src: url(../fonts/SFUFUTURABOLD.TTF);
+}
+
+@font-face {
+  font-family: SFUBook;
+  src: url(../fonts/SFUFUTURABOOK.TTF);
+}
+
 /* ===============  Global style  =============== */
 
 .back-top {
@@ -118,7 +130,6 @@ img {
 
 .header {
   padding: 23px 0;
-  border-bottom: 2px solid var(--main-color);
   position: relative;
 }
 
@@ -179,7 +190,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 68px;
+  top: 70px;
   background-color: #f2f7f0;
   padding: 25px 0;
   opacity: 0;
@@ -189,6 +200,8 @@ img {
   transform: scale(1, 0);
   animation-fill-mode: forwards;
   transform-origin: top;
+  border-top: 2px solid var(--main-color);
+  z-index: 97;
 }
 
 .has-mega-menu:hover .mega-menu {
@@ -267,10 +280,11 @@ img {
   left: 0;
   right: 0;
   top: 72px;
-  background: linear-gradient(to right, var(--main-color), #87b959 );
+  background: #2b3038;
   height: 0;
   overflow: hidden;
   transition: height .5s ease;
+  z-index: 99;
 }
 
 .header__search-inner h2 {
@@ -367,6 +381,7 @@ img {
   visibility: hidden;
   transition: all .25s linear;
   transform: translateY(-100px);
+  z-index: 98;
 }
 
 .main-modal.active {
@@ -454,3 +469,54 @@ img {
   height: 200px;
   object-fit: cover;
 }
+
+.nav__action-mb {
+  display: none;
+  font-size: 20px;
+}
+
+.service {
+  position: relative;
+}
+
+.service-img img {
+  width: 100%;
+}
+
+.service-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23%;
+}
+
+.service-content h2 {
+  font-size: 40px ;
+  font-family: var(--sfu-b);
+  color: var(--white-color);
+  line-height: 48px;
+  margin-bottom: 15px;
+}
+
+.service-content a {
+  display: inline-block;
+  padding: 15px 20px;
+  font-family: var(--sfu-book);
+  font-size: 24px;
+  background-color: #4f903f;
+  color: var(--white-color);
+}
+
+.service-content .text-color {
+  color: var(--text-color);
+}
+
+
+.service-content .bg-light-grey {
+  background: #a8a7a7;
+}
+
+.service-content .bg-dark-blue {
+  background: #2b3038;
+}
+
