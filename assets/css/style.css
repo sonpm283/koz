@@ -934,3 +934,143 @@ img {
   right: -156px;
   background: #0fa8e2;
 }
+
+.banner {
+  position: relative;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.banner__content {
+  color: var(--white-color);
+  font-family: var(--sfu-book);
+}
+
+.banner__content h2 {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.banner__content p {
+  font-size: 20px;
+}
+
+.banner__img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu__banner {
+  width: 50%;
+  position: absolute;
+  background: var(--white-color);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25px 0;
+  top: 185px;
+}
+
+.menu__banner li a {
+  padding: 0 15px;
+  display: inline-block;
+  border-right: 1px solid #dee2e5;
+  font-size: 16px;
+}
+
+.menu__banner li:last-child a {
+  border-right: none;
+}
+
+.menu__banner li:first-child i {
+  color: var(--main-color);
+}
+
+.product-detail {
+  margin-top: 60px;
+}
+
+.product-detail__thumb {
+  width: 20%;
+}
+
+.product-detail__thumb li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.product-detail__thumb li img {
+  width: 110px;
+  height: 120px;
+  border: 1px solid #dee2e5;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.product-detail__thumb li img.active {
+  border-color: #20409a;
+}
+
+.product-detail__thumb li:hover img {
+  border-color: var(--text-color);
+}
+
+.big-img {
+  width: 80%;
+}
+
+.big-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.product-detail__title {
+  font-size: 43px;
+  line-height: 1.1;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-detail__name {
+  display: block;
+  font-size: 32px;
+  color: #005aab;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+.product-detail__choose {
+  margin-top: 25px;
+}
+
+.product-detail__choose li {
+  padding: 20px 0px;
+  border-top: 1px solid #f2f2f5;
+}
+
+.product-detail__choose li p {
+  width: 30%;
+}
+
+.pro-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #005aab;
+}
+
+.product-detail__choose li  span {
+  font-weight: 700;
+}
+
+.price-label {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  padding-left: 20px;
+}
