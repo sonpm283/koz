@@ -4,9 +4,10 @@
   --white-color: #fff;
   --text-color: #333333;
   --secondary-color: #2b3038;
-  --roboto-font: 'Roboto', sans-serif;
+  --roboto-font: Roboto-Regular;
   --sfu-b:  SFUBold;
   --sfu-book: SFUBook;
+  --roboto-bold: Roboto-Bold;
 }
 
 html {
@@ -90,6 +91,18 @@ img {
   font-family: SFUBook;
   src: url(../fonts/SFUFUTURABOOK.TTF);
 }
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
 
 /* ===============  Global style  =============== */
 
@@ -1202,4 +1215,13 @@ img {
 
 .radio input[type="radio"] + .radio-label:empty:before {
   margin-right: 0;
+}
+
+.product-rela {
+  margin: 40px 0;
+}
+
+.product-rela {
+  font-size: 32px;
+  color: #313035;
 }
