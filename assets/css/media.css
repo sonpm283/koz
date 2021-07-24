@@ -259,6 +259,10 @@
 		text-transform: inherit;
 		font-size: 13px;
 	}
+
+	.product-detail__gallery {
+		flex-direction: row-reverse	;
+	}
 }
 
 @media screen and (max-width: 340px) {
