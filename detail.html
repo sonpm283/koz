@@ -297,9 +297,16 @@
                                 <p>Model</p>
                                 <span>CHP-5321D</span>
                             </li>
-                            <li class="d-flex">
+                            <li class="d-flex align-items-center">
                                 <p>Giá sản phẩm</p>
-                                <span>CHP-5321D</span>
+                                <div class="radio">
+                                    <input id="radio-1" name="radio" type="radio" checked>
+                                    <label for="radio-1" class="radio-label">Giá bán</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input id="radio-2" name="radio" type="radio">
+                                    <label  for="radio-2" class="radio-label">Giá thuê</label>
+                                </div>
                             </li>
                             <li class="d-flex">
                                 <p>Màu sắc</p>
@@ -312,30 +319,95 @@
                         </ul>
                         <div class="table-price">
                             <p class="price-label">Bảng giá</p>
-                            <table cellpadding="0" cellspacing="0" class="tab-ctsp" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; font-family: Nunito, sans-serif; font-size: 15px;" width="100%">
-                                <tbody style="box-sizing: border-box;">
+                            <table cellpadding="0" cellspacing="0" class="tab-ctsp" style="border-spacing: 0px; border-collapse: collapse; font-family: Nunito, sans-serif; font-size: 15px;" width="100%">
+                                <tbody>
                                     <tr style="box-sizing: border-box;">
-                                        <td rowspan="2" style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Đặt cọc</td>
-                                        <td colspan="4" style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Thanh toán phí thuê/tháng</td>
+                                        <td rowspan="2" style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Đặt cọc</td>
+                                        <td colspan="4" style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Thanh toán phí thuê/tháng</td>
                                     </tr>
-                                    <tr style="box-sizing: border-box;">
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Phí thuê</td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">6 tháng</td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">12 tháng</td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">24 tháng</td>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Phí thuê</td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">6 tháng</td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">12 tháng</td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">24 tháng</td>
                                     </tr>
-                                    <tr style="box-sizing: border-box;">
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">15%</td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">1.100.000 đ</td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;"><span style="font-family: Nunito, sans-serif; font-size: 15px; text-align: center;">1.050.000 đ</span></td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Tặng 1 tháng</td>
-                                        <td style="box-sizing: border-box; padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Tặng 2 tháng</td>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">15%</td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">1.100.000 đ</td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;"><span style="font-family: Nunito, sans-serif; font-size: 15px; text-align: center;">1.050.000 đ</span></td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Tặng 1 tháng</td>
+                                        <td style="padding: 10px; border: 1px solid rgb(204, 204, 204); text-align: center;">Tặng 2 tháng</td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <span>*Thời hạn thuê máy tối thiểu 36 tháng / Liên hệ 1800 6740 để được tư vấn</span>
+                            <hr>
+                            <span>*Tặng máy sau khi hoàn thành thời hạn thuê máy theo hợp đồng.</span>
+                            <ul class="shopping-action d-flex">
+                                <li>
+                                    <a href="">Call</a>
+                                </li>
+                                <li>
+                                    <a href="">Đặt hàng</a>
+                                </li>
+                                <li>
+                                    <a href="">Nơi mua hàng</a>
+                                </li>
+                            </ul>
+                            <ul class="shopping-brand d-flex">
+                                <li>
+                                    <a href="">
+                                        <img src="assets/images/shoppe.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/images/lazada.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/images/sendo.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/images/tiki.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/images/adayroi.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail-desc">
+        <ul class="tab-product d-flex">
+            <li>
+                <a href="#" class="tab" data-pane=".pane1">Thông tin chi tiết</a>
+            </li>
+            <li>
+                <a href="#" class="tab" data-pane=".pane2">Thông số kỹ thuật</a>
+            </li>
+            <li>
+                <a href="#" class="tab" data-pane=".pane3" >Hướng dẫn</a>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="pane pane1">
+                <img src="assets/images/chp-5321d-3a1.png" alt="">
+            </div>
+            <div class="pane pane2">
+                <img src="assets/images/thong-so-ky-thuat-tiny-900-ice1.png" alt="">
+            </div>
+            <div class="pane pane3">
+                <img src="assets/images/chp-5321d-5.png" alt="">
             </div>
         </div>
     </section>

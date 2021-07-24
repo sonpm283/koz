@@ -1074,3 +1074,132 @@ img {
   font-size: 16px;
   padding-left: 20px;
 }
+.shopping-action {
+  margin-top: 20px;
+  margin-left: -10px;
+  flex-wrap: wrap;
+}
+.shopping-action li {
+  margin-left: 10px;
+  width: calc(33.33% - 10px);
+}
+
+.table-price  table {
+  margin-bottom: 20px;
+}
+
+.table-price span {
+  font-style: italic;
+}
+
+.shopping-action {
+  margin-bottom: 20px;
+}
+
+.shopping-action li a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 15px 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0px;
+  border: none;
+  background-image: linear-gradient(to right, #015f9e, #015f9e);
+  width: 100%;
+  text-align: center;
+}
+
+.shopping-brand {
+  margin-left: -10px;
+}
+
+.shopping-brand li {
+  width: calc(20% - 10px);
+  margin-left: 10px;
+}
+
+.shopping-brand li a:hover img {
+  transform: scale(1.1);
+}
+
+.shopping-brand li  a img {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.product-detail-desc {
+  margin-top: 40px;
+}
+
+.tab-product li {
+  width: 33.33%;
+  text-align: center;
+  border: 1px solid #f2f2f5;
+}
+
+.tab-product {
+  margin-bottom: 20px;
+}
+
+.tab-product li a {
+  display: inline-block;
+  padding: 20px 0;
+  background: #f5f6fa;
+  width: 100%;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.tab-product li a.active {
+  background: #005aab;
+  color: var(--white-color);
+}
+
+
+.radio {
+  margin: 0.5rem;
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio input[type="radio"] + .radio-label:before {
+  content: '';
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  position: relative;
+  top: -0.2em;
+  margin-right: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+
+.radio input[type="radio"]:checked + .radio-label:before {
+  background-color: #3197ee;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+
+.radio input[type="radio"]:focus + .radio-label:before {
+  outline: none;
+  border-color: #3197ee;
+}
+
+.radio input[type="radio"]:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+
+.radio input[type="radio"] + .radio-label:empty:before {
+  margin-right: 0;
+}

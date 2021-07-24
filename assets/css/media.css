@@ -105,6 +105,12 @@
 	.menumobile {
 		display: block;
 	}
+
+	.menu__banner {
+		position: static;
+		width: 100%;
+		transform: unset	;
+	}
 }
 
 
@@ -187,6 +193,14 @@
 		margin-left: 10px;
 	}
 
+	.zoomContainer {
+		display: none;
+	}
+
+	.menu__banner {
+		display: none !important;
+	}
+
 }
 
 
@@ -228,13 +242,38 @@
 	.list-icon {
 		bottom: 50px;
 	}
-	
+
+	.big-img img {
+		height: 400px;
+	}
+
+	.shopping-action li {
+		width: 100%;
+		margin: 5px;
+	}
+
+	.product-detail__title {
+		font-size: 25px;
+	}
+
+	.product-detail__name {
+		font-size: 22px;
+	}
+	.tab-product li a {
+		text-transform: inherit;
+		font-size: 13px;
+	}
 }
 
 @media screen and (max-width: 340px) {
 	.social p  {
 		margin-bottom: 20px;
 	}
+	.price-label {
+		display: none;
+	}
+
+	.table-price table {display: none;}
 }
 
 

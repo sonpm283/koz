@@ -158,7 +158,10 @@ thumb.click(function() {
     $(idThumbBig).show()
     const imgUrl = $(this).attr("src")
     thumbBig.attr({"src":imgUrl, "data-zoom-image":imgUrl})
-    $(idThumbBig).elevateZoom();
+    $(idThumbBig).elevateZoom({
+      zoomType : "inner",
+      cursor: "crosshair"
+    });
 })
 
 $(".product-detail__thumb li:first img").click()
@@ -167,3 +170,17 @@ $(".product-detail__thumb li img").click(function() {
   $(".product-detail__thumb li img").removeClass("active")
   $(this).addClass("active")
 })
+
+
+const productTab = $(".tab-product li a");
+const productPane = $(".pane")
+productTab.click(function(e) {
+  productTab.removeClass("active")
+  $(this).addClass("active")
+  productPane.hide()
+  const pane = $(this).attr("data-pane")
+  $(pane).fadeIn(200)
+  e.preventDefault()
+})
+
+$(".tab-product li:first a").click()
