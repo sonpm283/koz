@@ -14,9 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-}
-
 *,
 *::before,
 *::after {
@@ -80,6 +77,9 @@ img {
   display: block;
 }
 
+.pd-10 {
+  padding: 10px;
+}
 
 
 @font-face {
@@ -103,8 +103,6 @@ img {
   src: url(../fonts/Roboto-Bold.ttf);
 }
 
-
-/* ===============  Global style  =============== */
 
 .back-top {
   position: fixed;
@@ -131,6 +129,11 @@ img {
 .back-top.active {
 	opacity: 1;
 	visibility: visible;
+}
+
+.page-heading h2 {
+  text-transform: uppercase;
+  font-size: 36px;
 }
 
 .header {
@@ -587,17 +590,24 @@ img {
   background-color: #5e6268;
 }
 
-.category__slide-item img {
+.box-product  img {
+  height: 315px;
+  object-fit: cover;
+}
+.box-product {
+  position: relative;
+}
+.box-product  img {
   height: 315px;
   object-fit: cover;
 }
 
-.category__slide-item > a img {
+.box-product  > a img {
   transition: all .3s ease-in-out;
   border: 2px solid transparent;
 }
 
-.category__slide-item > a:hover img{
+.box-product  > a:hover img{
   display: block;
   box-shadow: 0 10px 20px 0 rgb(153 159 183 / 50%);
   border-color: #337ab7;
@@ -613,7 +623,7 @@ img {
   transition: all .3s ease-in-out;
 }
 
-.category__slide-item:hover .category-hover-icon {
+.box-product:hover .category-hover-icon {
   opacity: 1;
   visibility: visible;
 }
@@ -623,7 +633,7 @@ img {
   height: 69px;
 }
 
-.category__slide-item h3 {
+.box-product h3 {
   font-size: 16px;
   color: var(--text-color);
   margin-top: 10px;
@@ -980,7 +990,7 @@ img {
 }
 
 .menu__banner {
-  width: 50%;
+  width: 70%;
   position: absolute;
   background: var(--white-color);
   left: 50%;
@@ -1225,3 +1235,42 @@ img {
   font-size: 32px;
   color: #313035;
 }
+
+.category-page {
+  margin-top: 0;
+}
+
+.hr-title {
+  width: 1px;
+  height: 50px;
+  margin: 0 auto 14px;
+  border: 0;
+  background: linear-gradient(to bottom, #16b4b7, #036ea7);
+}
+
+.category-page .page-heading {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 30px 0;
+}
+
+.category-page .tab-product {
+  flex-wrap: wrap;
+}
+
+.category-page .tab-product li a {
+  background: var(--white-color);
+  font-size: 17px;
+}
+
+.category-page .tab-product li {
+  width: 14.28%;
+}
+
+.category-page .tab-product li a.active {
+  background: #005aab;
+}
+
+
+
+

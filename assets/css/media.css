@@ -142,8 +142,13 @@
 	.footer__info {
 		text-align: left !important;
 	}
+	.category-page .tab-product li {
+		width: 33.33%;
+	}
 
-	
+	.header__keyword ul li a {
+		padding: 7px 13px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -262,6 +267,14 @@
 
 	.product-detail__gallery {
 		flex-direction: row-reverse	;
+	}
+
+	.category-page .tab-product li a {
+		font-size: 14px;
+	}
+
+	.page-heading h2  {
+		font-size: 30px;
 	}
 }
 
