@@ -1156,6 +1156,7 @@ img {
   width: 33.33%;
   text-align: center;
   border: 1px solid #f2f2f5;
+  border-left: unset;
 }
 
 .tab-product {
