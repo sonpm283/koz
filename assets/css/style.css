@@ -992,7 +992,7 @@ img {
   transform: translateX(-50%);
   padding: 25px 0;
   top: 133px;
-  z-index: 99;
+  z-index: 20;
 }
 
 .menu__banner li a {
