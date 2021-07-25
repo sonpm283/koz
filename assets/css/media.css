@@ -207,6 +207,10 @@
 		width: 100%;
 	}
 
+	.category-page .page-heading {
+		margin: 0;
+	}
+
 }
 
 
@@ -279,7 +283,14 @@
 	}
 
 	.page-heading h2  {
-		font-size: 30px;
+		font-size: 25px;
+	}
+
+	.category-page .page-heading {
+		margin: 0;
+	}
+	.banner__content h2 {
+		font-size: 24px;
 	}
 }
 
@@ -287,11 +298,16 @@
 	.social p  {
 		margin-bottom: 20px;
 	}
+
 	.price-label {
 		display: none;
 	}
 
-	.table-price table {display: none;}
+	.table-price table {
+	 	display: none;
+	}
+
+	
 }
 
 

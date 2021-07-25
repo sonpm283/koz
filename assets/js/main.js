@@ -160,8 +160,9 @@ thumb.click(function() {
     thumbBig.attr({"src":imgUrl, "data-zoom-image":imgUrl})
     $(idThumbBig).elevateZoom({
       zoomType : "inner",
-      cursor: "crosshair"
+      cursor: "crosshair",
     });
+    
 })
 
 $(".product-detail__thumb li:first img").click()
