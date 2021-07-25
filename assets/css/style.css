@@ -590,21 +590,16 @@ img {
   background-color: #5e6268;
 }
 
-.box-product  img {
-  height: 315px;
-  object-fit: cover;
-}
 .box-product {
   position: relative;
 }
-.box-product  img {
-  height: 315px;
-  object-fit: cover;
-}
+
 
 .box-product  > a img {
   transition: all .3s ease-in-out;
   border: 2px solid transparent;
+  height: 315px;
+  object-fit: cover;
 }
 
 .box-product  > a:hover img{

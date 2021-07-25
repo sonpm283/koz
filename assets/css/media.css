@@ -202,6 +202,11 @@
 		display: none !important;
 	}
 
+	.box-product  > a img {
+		height: auto;
+		width: 100%;
+	}
+
 }
 
 
