@@ -1070,7 +1070,7 @@ img {
 }
 
 .menu__banner li:first-child i {
-  color: var(--main-color);
+  color: #005aab;
 }
 
 .product-detail {
