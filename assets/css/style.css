@@ -1022,7 +1022,7 @@ img {
 
 .banner__content {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -1289,7 +1289,7 @@ img {
 }
 
 .product-rela {
-  margin: 15px 0;
+  margin: 40px 0;
 }
 
 .product-rela {
