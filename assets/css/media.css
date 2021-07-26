@@ -289,9 +289,18 @@
 	.category-page .page-heading {
 		margin: 0;
 	}
+
 	.banner__content h2 {
 		font-size: 24px;
 	}
+	.prod-filter select {
+		width: 130px;
+	}
+
+	.form-cate__gr input[type="search"] {
+		width: 120px;
+	}
+	
 }
 
 @media screen and (max-width: 340px) {
@@ -305,6 +314,14 @@
 
 	.table-price table {
 	 	display: none;
+	}
+
+	.prod-filter select {
+		width: 130px;
+	}
+
+	.form-cate__gr input[type="search"] {
+		width: 98px;
 	}
 
 	
